@@ -1,7 +1,8 @@
 public class App {
     public static void main(String[] args) throws Exception {
 
-        esPerson();
+        // esPerson();
+        esAutomobili();
     }
 
     public static void esSquare() {
@@ -91,6 +92,25 @@ public class App {
 
         System.out.println(st1);
         System.out.println(st2);
+    }
 
+    public static void esAutomobili() {
+
+        Automobile a1 = new Automobile("Fiat", "Panda", "AB123CD");
+        Automobile a2 = new Automobile("Ford", "Focus", "EF456GH");
+
+        System.out.println(a1.getMarca());
+        System.out.println(a1.getModello());
+        System.out.println(a1.getTarga());
+
+        a1.setMarca("Ferrari");
+        a1.setModello("Testarossa");
+        a1.setTarga("XX000YY");
+
+        System.out.println(a1.getDetails());
+        System.out.println(a2.getDetails());
+
+        System.out.println(a1);
+        System.out.println(a2);
     }
 }
