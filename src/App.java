@@ -55,5 +55,25 @@ public class App {
 
         System.out.println(p1);
         System.out.println(p2);
+
+        System.out.println("--------------------");
+
+        Studente st1 = new Studente("Guybrush", "Threepwood", -1);
+        Studente st2 = new Studente("Elaine", "Marley", 9884);
+
+        // st1.mat = -1;
+        // st2.mat = -2;
+
+        int st1mat = st1.getMat();
+        System.out.println(st1mat);
+
+        st1.setMat(-1);
+
+        System.out.println(st1.getDetails());
+        System.out.println(st2.getDetails());
+
+        System.out.println(st1);
+        System.out.println(st2);
+
     }
 }
