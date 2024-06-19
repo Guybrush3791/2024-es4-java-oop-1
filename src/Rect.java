@@ -17,4 +17,10 @@ public class Rect {
 
         return x * y;
     }
+
+    @Override
+    public String toString() {
+
+        return "Rect [x=" + x + ", y=" + y + "] | Area: " + getArea() + " | Perimeter: " + getPer();
+    }
 }
