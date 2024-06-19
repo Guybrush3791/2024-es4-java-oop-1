@@ -28,5 +28,32 @@ public class App {
         Rect r = new Rect(10, 20);
 
         System.out.println("r area: " + r.getArea());
+
+        System.out.println("--------------------");
+
+        Circle c1 = new Circle(1);
+        Circle c2 = new Circle(2);
+
+        System.out.println(c1);
+        System.out.println("c1 r: " + c1.r);
+        System.out.println("c1 getPer: " + c1.getPer());
+        System.out.println("c1 getArea: " + c1.getArea());
+
+        System.out.println("--------------------");
+
+        System.out.println(c2);
+        System.out.println("c2 r: " + c2.r);
+        System.out.println("c2 getPer: " + c2.getPer());
+        System.out.println("c2 getArea: " + c2.getArea());
+
+        System.out.println("--------------------");
+
+        Person p1 = new Person("Mario", 30);
+        Person p2 = new Person("Luigi", 40);
+
+        System.out.println(p1.getDetails());
+
+        System.out.println(p1);
+        System.out.println(p2);
     }
 }
