@@ -1,10 +1,10 @@
 public class App {
     public static void main(String[] args) throws Exception {
 
-        es1();
+        esPerson();
     }
 
-    public static void es1() {
+    public static void esSquare() {
 
         Square s = new Square(10);
         s.x += 5;
@@ -23,13 +23,17 @@ public class App {
         System.out.println("s2 getPer: " + s2.getPer());
         System.out.println("s2 getArea: " + s2.getArea());
 
-        System.out.println("--------------------");
+    }
+
+    public static void esRect() {
 
         Rect r = new Rect(10, 20);
 
         System.out.println("r area: " + r.getArea());
 
-        System.out.println("--------------------");
+    }
+
+    public static void esCircle() {
 
         Circle c1 = new Circle(1);
         Circle c2 = new Circle(2);
@@ -46,17 +50,30 @@ public class App {
         System.out.println("c2 getPer: " + c2.getPer());
         System.out.println("c2 getArea: " + c2.getArea());
 
-        System.out.println("--------------------");
+    }
+
+    public static void esPerson() {
 
         Person p1 = new Person("Mario", 30);
         Person p2 = new Person("Luigi", 40);
 
         System.out.println(p1.getDetails());
+        System.out.println(p2.getDetails());
+
+        // p1.name = "Tulio";
+
+        p1.setName("Guybrush");
+        p2.setAge(300);
+
+        System.out.println(p1.getDetails());
+        System.out.println(p2.getDetails());
 
         System.out.println(p1);
         System.out.println(p2);
 
-        System.out.println("--------------------");
+    }
+
+    public static void esStudent() {
 
         Studente st1 = new Studente("Guybrush", "Threepwood", -1);
         Studente st2 = new Studente("Elaine", "Marley", 9884);

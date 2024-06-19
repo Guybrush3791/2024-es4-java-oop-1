@@ -15,20 +15,41 @@ public class Person {
      * utilizzi le proprieta' getter
      * 
      * testare adeguatamente il risultato finale
+     * 
      */
 
-    String name;
-    int age;
+    private String name;
+    private int age;
 
     public Person(String name, int age) {
 
+        setName(name);
+        setAge(age);
+    }
+
+    public String getName() {
+
+        return name;
+    }
+
+    public void setName(String name) {
+
         this.name = name;
+    }
+
+    public int getAge() {
+
+        return age;
+    }
+
+    public void setAge(int age) {
+
         this.age = age;
     }
 
     public String getDetails() {
 
-        return name + " - age: " + age;
+        return getName() + " - age: " + getAge();
     }
 
     @Override
